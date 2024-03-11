@@ -4,14 +4,24 @@ function HomePage() {
     const titleInputRef = useRef()
     const priceInputRef = useRef()
 
-    function addProductHandler(event) {
+    async function addProductHandler(event) {
         event.preventDefault()
 
         const title = titleInputRef.current.value
         const price = priceInputRef.current.value
 
-        console.log(title)
-        console.log(price)
+        const reqBody = { title, price }
+
+        const response = await fetch('/api/product', {
+            method: "POST",
+            body: JSON.stringify(reqBody),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+
+        const responseData = await response.json()
+        console.log(responseData)
     }
 
     return (

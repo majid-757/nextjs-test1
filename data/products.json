@@ -1,11 +1,14 @@
-{
-    "products": [
-        { "id": "p1", "title": "Product 1", "price": "55555" },
-        { "id": "p2", "title": "Product 2", "price": "7777" },
-        { "id": "p3", "title": "Product 3", "price": "525" },
-        { "id": "p4", "title": "Product 4", "price": "1414" }
-    ]
-}
-
-
-
+[
+    {
+        "title": "john cena",
+        "price": "343242"
+    },
+    {
+        "title": "john cena",
+        "price": "54645644654"
+    },
+    {
+        "title": "john ",
+        "price": "1111111111"
+    }
+]
