@@ -1,14 +1,1 @@
-[
-    {
-        "title": "john cena",
-        "price": "343242"
-    },
-    {
-        "title": "john cena",
-        "price": "54645644654"
-    },
-    {
-        "title": "john ",
-        "price": "1111111111"
-    }
-]
+[{"id":"c1","title":"product 1","price":"343242"},{"id":"c2","title":"product 2","price":"54645644654"},{"id":"c3","title":"product 3","price":"1111111111"},{"title":"","price":""}]

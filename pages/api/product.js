@@ -18,6 +18,14 @@ function handler(req, res) {
 
         fs.writeFileSync(filePath, JSON.stringify(data))
 
+    } else {
+        const filePath = path.join(process.cwd(), 'data', 'products.json')
+
+        const fileData = fs.readFileSync(filePath)
+
+        const data = JSON.parse(fileData)
+
+        res.json({ products: data })
     }
 }
 
